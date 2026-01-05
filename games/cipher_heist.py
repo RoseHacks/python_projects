@@ -40,14 +40,6 @@ class Game():
             return False
 
 
-
-
-        for i in self.levels[0]:
-            open(i)
-            for each line:
-    def run_level(self): 
-
-
 print("PuppetMaster~$: Welcome hacker")
 sleep(.8)
 print("PuppetMaster~$: Today is your lucky day.")
