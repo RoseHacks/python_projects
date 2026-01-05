@@ -6,13 +6,16 @@ Running = True
 class Game():
 
     def __init__(self):
-        levels = ["levels/level_1.txt", "levels/level_1.txt", "levels/level_1.txt"]
-        current.level = 0
-
+        self.levels = ["levels/level_1.txt", "levels/level_2.txt", "levels/level_3.txt"]
+        self.current.level = 0
+        self.lives = 3
+        self.cipher_data = []
 
     def load_level(self):
-        current_level = 0
-        current_leevel += 1
+        for i in self.levels[0]:
+            open(i)
+            for each line:
+
 
 print("PuppetMaster~$: Welcome hacker")
 sleep(.8)
@@ -22,6 +25,8 @@ print("PuppetMaster~$: We need your elite hacking skills to decipher some stolen
 sleep(1.2)
 print("PuppetMaster~$: Complete this task for us and we will split the reward with you. 50/50")
 sleep(1.4)
+print("You will have 3 chances to solve each problem before we offer the work to someone else.")
+sleep(1.8)
 print("PuppetMaster~$: Think you're up for the challenge?")
 
 while Running:
