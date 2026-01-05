@@ -19,8 +19,9 @@ class Game:
     def tricked(self):
         if self.revives == 1:
             print("The house always wins..")
-            time.sleep(1)
+            time.sleep(2)
             print("House gains 100 points")            
+            time.sleep(.8)
             self.house_bank += 100
             self.revives -= 1
 

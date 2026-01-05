@@ -1,0 +1,5 @@
+# Cipher Heist - Level 3
+TYPE=SLICE
+RULE=EVEN_ODD
+MESSAGE=HLOEL
+

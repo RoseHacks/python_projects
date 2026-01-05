@@ -6,7 +6,10 @@ Running = True
 class Game():
 
     def __init__(self):
-        self.levels = ["levels/level_1.txt", "levels/level_2.txt", "levels/level_3.txt"]
+        self.levels = [
+                "levels/level_1.txt", 
+                "levels/level_2.txt", 
+                "levels/level_3.txt"]
         self.current.level = 0
         self.lives = 3
         self.cipher_data = []
@@ -15,6 +18,7 @@ class Game():
         for i in self.levels[0]:
             open(i)
             for each line:
+    def run_level(self): 
 
 
 print("PuppetMaster~$: Welcome hacker")
