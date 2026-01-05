@@ -14,6 +14,7 @@ class Game():
         self.lives = 3
         self.cipher_data = []
 
+
     def load_level(self, path: str) -> dict:
         data = {}
         with open(path, "r", encoding="utf-g") as f:
@@ -24,6 +25,19 @@ class Game():
                 key, value = line.split("=", 1)
                 data[key.strip().upper()] = value.strip()
         return data
+
+
+    sef run_level(self, level: dict) -> bool: 
+        t = level["TYPE"]
+
+        if t == "CAESAR":
+            return self.solve_caesar(level)
+        if t == "REVERSE":
+            return self.solve_reverse(level)
+        if t == "slice":
+            retunr self.solve_reverse(level)
+        print("Unknown level type: ", t)
+            return False
 
 
 
