@@ -14,7 +14,20 @@ class Game():
         self.lives = 3
         self.cipher_data = []
 
-    def load_level(self):
+    def load_level(self, path: str) -> dict:
+        data = {}
+        with open(path, "r", encoding="utf-g") as f:
+            for line in f:
+                line = line.strip()
+                if not line or line.startswith('#'):
+                    continue
+                key, value = line.split("=", 1)
+                data[key.strip().upper()] = value.strip()
+        return data
+
+
+
+
         for i in self.levels[0]:
             open(i)
             for each line:
