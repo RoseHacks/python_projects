@@ -1,3 +1,6 @@
-# level_1.txt
+# Cipher Heist - Level 1
+TYPE=CAESAR
+SHIFT=3
 MESSAGE=PHHW DW GRFN
+ANSWER=MEET AT DOCK
 
